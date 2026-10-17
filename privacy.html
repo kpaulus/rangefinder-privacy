@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PinRead Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 2.5rem auto; padding: 0 1.25rem 4rem;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .25rem; }
+  .updated { color: #777; font-size: .9rem; margin: 0 0 2rem; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .6rem; }
+  p, li { color: inherit; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  .lead { font-size: 1.05rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid #ccc; vertical-align: top; }
+  footer { margin-top: 3rem; color: #777; font-size: .85rem; }
+</style>
+</head>
+<body>
+
+<h1>PinRead Privacy Policy</h1>
+<p class="updated">Effective October 17, 2026</p>
+
+<p class="lead">PinRead is a golf rangefinder app. It works on your
+phone: it doesn't have accounts, it doesn't ask for your name or
+email, and it doesn't track you. This page explains exactly what the
+app does with the camera, your location, and &mdash; only if you turn
+it on &mdash; your photos.</p>
+
+<h2>What the app uses, and why</h2>
+<ul>
+  <li><strong>Camera.</strong> PinRead takes a photo of the flagstick
+  to measure the distance to the pin. The photo stays on your phone
+  unless you turn on sharing (below).</li>
+  <li><strong>Location and heading</strong> (while you're using the
+  app). Your position is used to project the pin's position and to
+  look up the course, hole, and green edges. Location is not used in
+  the background.</li>
+  <li><strong>Motion.</strong> The phone's pitch is measured to
+  correct the slant-to-ground distance calculation.</li>
+</ul>
+
+<h2>Services the app calls to work</h2>
+<p>Like any app that answers "what course am I on" and "which way is
+the wind", PinRead sends your approximate position to services that
+answer those questions. These calls carry only the coordinates of the
+shot at hand:</p>
+<table>
+  <tr><th>Service</th><th>What it receives</th><th>What it returns</th></tr>
+  <tr><td>Apple WeatherKit</td><td>Your coordinates</td>
+      <td>Current weather, for shot context</td></tr>
+  <tr><td>Open-Meteo (used only if WeatherKit fails)</td>
+      <td>Your coordinates</td><td>Current weather</td></tr>
+  <tr><td>OpenStreetMap</td><td>Your coordinates</td>
+      <td>The course, hole, and green geometry</td></tr>
+</table>
+<p>These services receive nothing else &mdash; no photos, no identifiers, and nothing that identifies your device beyond the app name and version every app sends with a web request.</p>
+
+<h2>Optional capture sharing (off by default)</h2>
+<p>There is one optional feature: <em>Share captures to improve the
+model</em>, in Settings. It is off unless you turn it on, and turning
+it on is the whole consent &mdash; nothing is written for upload, let
+alone sent, until then.</p>
+
+<p>When sharing is on, each capture you take is uploaded to help
+train and improve the distance model. Uploads use any available
+connection, including cellular data, unless you turn on <em>Upload on
+Wi-Fi only</em> in Settings.
+Each capture includes:</p>
+<ul>
+  <li>the photo itself, and small cropped images the app derived from
+  it;</li>
+  <li>the location, heading, and motion sensor values at the moment
+  of the shot, plus the time;</li>
+  <li>the course, hole, and app version, and your phone model;</li>
+  <li>an anonymous <strong>install ID</strong> &mdash; a random ID
+  stored on your phone, which is never sent anywhere unless sharing is
+  on. It is not tied to your Apple ID, your hardware, or anything
+  else, and it resets if you reinstall the app. It exists so that captures from one install can
+  be reviewed as a group; it cannot be used to contact you or find
+  you.</li>
+</ul>
+
+<p><strong>What the photo does not contain:</strong> before a capture
+is ever written for upload, the app removes location (GPS) metadata
+and device serial/owner fields from the photo's EXIF metadata, and a
+second check refuses to upload any photo in which those fields
+somehow survived. The location facts above travel in the capture's
+data file because they are exactly what makes the capture useful for
+training &mdash; the photo itself carries none.</p>
+
+<p><strong>Every capture uploads while sharing is on</strong>,
+wherever it was taken, so only turn sharing on while you are using the
+app for golf. If you turn sharing on and then off, no new captures are
+sent from that point on.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No accounts, no sign-in, no name, email, or contact info.</li>
+  <li>No advertising, no analytics, no cross-app tracking.</li>
+  <li>No selling or sharing of your data with anyone for their own
+  purposes.</li>
+  <li>No background location: PinRead reads your position only while
+  you are using it.</li>
+</ul>
+
+<h2>Your controls</h2>
+<ul>
+  <li><strong>Turn sharing off</strong> any time in Settings &rarr;
+  Data collection. Queued captures that have not yet sent can simply
+  be deleted on-device.</li>
+  <li><strong>Delete what's on your phone:</strong> captures live in
+  the app's folder in the Files app, and are removed completely by
+  deleting the app.</li>
+  <li><strong>Delete what was uploaded:</strong> email the address
+  below with roughly when and where you played and the captures will
+  be located and deleted from the training set.</li>
+  <li><strong>Reinstall</strong> to reset your install ID and end its
+  association with any captures.</li>
+</ul>
+
+<h2>Data retention and security</h2>
+<p>Captures you share are stored in the developer's private cloud
+storage and reviewed by hand, by the developer, to label training
+data. They are kept until they are no longer useful for improving
+the model, or until you ask for them to be deleted. Uploads are
+write-only to that storage.</p>
+
+<h2>Children</h2>
+<p>PinRead is not directed at children under 13 and does not
+knowingly collect any data from them.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version is posted here with a new
+effective date. Material changes to what is collected are additionally
+announced in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions or deletion requests:
+<!-- REPLACE with the address you use for the App Store Connect feedback email -->
+<strong>your-email@example.com</strong></p>
+
+<footer>PinRead is made by Kevin Paulus. This policy applies to the
+PinRead iOS app and any beta versions of it distributed through
+TestFlight.</footer>
+
+</body>
+</html>
